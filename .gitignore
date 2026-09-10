@@ -1,0 +1,21 @@
+# Raw downloaded data (regenerate with scripts/00_download_data.sh)
+data/jpcert_raw/
+data/top_domains_raw/
+data/chaman_legit_paths.csv
+*.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Model artifacts - the trained model IS committed (small, ~850KB) so the
+# repo is immediately runnable/demoable without retraining. Only exclude
+# larger experimental checkpoints if you add them later.
+
+# Jupyter
+.ipynb_checkpoints/

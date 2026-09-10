@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+xgboost
+opencv-python-headless
+qrcode
+matplotlib
+seaborn
+joblib
+streamlit
+# pyzbar is OPTIONAL - used only as a secondary QR-decode backend.
+# OpenCV (above) is the primary decoder and needs no external native library.
+# Uncomment below if you want it too (requires the system zbar library on Linux/Mac,
+# and can fail to load its DLL on some Windows setups - safe to skip entirely).
+# pyzbar
