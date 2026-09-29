@@ -30,6 +30,12 @@ python3 src/01b_enrich_legitimate_urls.py
 python3 src/03_feature_extraction.py
 python3 src/04_train_model.py
 ```
+## How this was built
+I designed the project scope, selected the data sources, and directed the
+experiments — including the feature ablation and the path-resampling fix
+described in Limitations. I used an AI assistant for code
+generation, debugging, and documentation drafting. I reviewed, ran, and can
+explain every component in this repository.
 
 ## Usage
 
@@ -50,10 +56,8 @@ streamlit run app.py
 ```
    ![Legitimate URL detected](results/demo_streamlit_legit.png)
    *baidu.com correctly classified as legitimate (12.8% phishing probability)*
-
    ![Phishing URL detected](results/demo_streamlit_phishing.png)
    *A quishing URL correctly flagged (99.6% phishing probability)*
-
    ![QR code upload](results/demo_streamlit_qr_upload.png)
    *Classification via QR code image upload*
 
@@ -122,7 +126,7 @@ was removed and the model retrained from scratch:
 | F1 | 88.91% | 85.56% |
 | ROC-AUC | 0.9622 | 0.9354 |
 
-Performance drops but stays well above chance, suggesting the remaining features carry some distributed signal
+Performance drops but stays well above chance, suggesting the remaining features carry some distributed signal.
 
 ## Limitations
 
@@ -165,13 +169,6 @@ and quishing detection, including:
 These works are acknowledged as related research. This repository does not
 claim ownership of third-party code, datasets, research results, or other
 external materials.
-
-## How this was built
-I designed the project scope, selected the data sources, and directed the
-experiments — including the feature ablation and the path-resampling fix
-described in Limitations. I used an AI assistant for code
-generation, debugging, and documentation drafting. I reviewed, ran, and can
-explain every component in this repository.
 
 ### Third-Party Resources
 
