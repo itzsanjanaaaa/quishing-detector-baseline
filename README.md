@@ -131,6 +131,15 @@ features carry genuine, distributed signal.
   training data; performance on out-of-distribution or adversarially crafted
   URLs is untested.
 
+  ## Roadmap
+This baseline uses centralised training on a single combined dataset. Next steps:
+- Test cross-dataset generalisation (train on JPCERT, evaluate on a held-out
+  phishing feed to check for distribution shift)
+- Extend to a federated learning setup, where multiple clients (e.g. simulated
+  organisations) train locally on private URL data and share only model
+  updates — the basis of my ongoing dissertation, "Quishing Detection and
+  Prevention Using Federated Learning"
+
 ## Related Work and Attribution
 
 This project is an independent research implementation and baseline for
@@ -149,6 +158,13 @@ and quishing detection, including:
 These works are acknowledged as related research. This repository does not
 claim ownership of third-party code, datasets, research results, or other
 external materials.
+
+## How this was built
+I designed the project scope, selected the data sources, and directed the
+experiments — including the feature ablation and the path-resampling fix
+described in Limitations. I used an AI assistant for code
+generation, debugging, and documentation drafting. I reviewed, ran, and can
+explain every component in this repository.
 
 ### Third-Party Resources
 
