@@ -122,8 +122,7 @@ was removed and the model retrained from scratch:
 | F1 | 88.91% | 85.56% |
 | ROC-AUC | 0.9622 | 0.9354 |
 
-Performance drops but stays well above chance, confirming the remaining 20
-features carry genuine, distributed signal.
+Performance drops but stays well above chance, suggesting the remaining features carry some distributed signal
 
 ## Limitations
 
