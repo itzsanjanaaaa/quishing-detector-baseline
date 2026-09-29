@@ -55,10 +55,15 @@ python src/05_predict.py --url "https://paypal-secure-login.top/verify/account"
 streamlit run app.py
 ```
    ![Legitimate URL detected](results/demo_streamlit_legit.png)
+
    *baidu.com correctly classified as legitimate (12.8% phishing probability)*
+   
    ![Phishing URL detected](results/demo_streamlit_phishing.png)
+   
    *A quishing URL correctly flagged (99.6% phishing probability)*
+   
    ![QR code upload](results/demo_streamlit_qr_upload.png)
+   
    *Classification via QR code image upload*
 
 ## Project structure
